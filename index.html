@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brcka.cz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="gradient-container">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo" width="125px"></a>
+                </div>
+                <nav>
+                 <ul id="MenuItems">
+                    <li><a class="active-page" href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                 </ul>
+                </nav>
+                <div id="myOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content">
+                      <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+
+                      </form>
+                    </div>
+                  </div>
+                <div class="left-nav-bar">
+                    <a onclick="openSearch()"><img src="images/search-icon1.png" alt="Search Icon"></a>
+                    <a href="cart.html"><img src="images/shopping-cart-icon1.png" alt="shop logo"></a>
+                    <a ><img src="images/menu-icon1.png" alt="Menu logo" class="menu-icon" onclick="menutoggle()" ></a> 
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="banner">
+                    <div class="container">
+                        <article>
+                            <div class="col-2">
+                                <h1>Dont loose your time<br>Fined new car with us!</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Dolorum harum amet laboriosam laborum asperiores rem, minima tempora sunt magni vel odit, <br> adipisci quos necessitatibus eos ipsum dolore. Atque, impedit recusandae?</p>
+                                <a href="#" class="btn">Find the car &#8594;</a>
+                            </div>
+                        </article>
+                        
+                        <div class="col-2">
+                            <img src="images/car1.png" alt="Main Car">
+                        </div>
+                    </div>
+            </div>
+        </section>
+             
+    </div>
+   
+   
+<!------------------ featured categories --------------->
+    <main>
+        <article>
+            <div class="categories">
+                <div class="small-container">
+                  <div class="container">
+                      <div class="col-3">
+                           <a href="#"><img src="images/ekonom-car-removebg-preview.png" alt="Ekonom Car"></a>
+                          <h1>Ekonom cars</h1>
+                      </div> 
+                      <div class="col-3">
+                         <a href=" #"><img src="images/comfort-car-removebg-preview.png" alt="Comfort Car"></a> 
+                         <h1>Comfort Cars</h1>
+                      </div> 
+                      <div class="col-3">
+                           <a href="#"><img src="images/sport-car-removebg-preview.png" alt="Sport Car"></a> 
+                          <h1>Sport Cars</h1>
+                      </div> 
+                  </div>
+                </div>
+            </div>
+        </article>
+        
+   <!-------------- Search auto box -------------->
+   <div class="search-auto-big-container">
+       <div class="search-auto-container">
+           <article>
+               <header>
+                   <p>Choose your car with us</p>
+               </header>
+           </article>
+           
+           <div class="search-parameters">
+               <!-- Brand -->
+               <div class="search-parametr-box">
+                   <select name="Brand" title="Select Brand">
+                       <option value="Brand">Brand</option>
+                       <option value="BMW">BMW</option>
+                       <option value="Mercedes">Mercedes</option>
+                       <option value="Skoda">Skoda</option>
+                       <option value="Fiat">Fiat</option>
+                   </select>
+               </div>
+           
+               <!-- Price -->
+               <div class="search-parametr-box">
+                   <select name="Price" title="Select Price Range">
+                       <option value="Price up to">Price up to</option>
+                       <option value="50000 Kc">50 000 Kc</option>
+                       <option value="100000 Kc">100 000 Kc</option>
+                       <option value="500000 Kc">500 000 Kc</option>
+                       <option value="1000000 Kc">1 000 000 Kc</option>
+                   </select>
+               </div>
+           
+               <!-- Mileage -->
+               <div class="search-parametr-box">
+                   <select name="Mileage" title="Select Mileage Range">
+                       <option value="Mileage up to">Mileage up to</option>
+                       <option value="1000 km">1,000 km</option>
+                       <option value="10000 km">10,000 km</option>
+                       <option value="100000 km">100,000 km</option>
+                       <option value="300000 km">300,000 km</option>
+                   </select>
+               </div>
+           
+               <!-- Year of Manufacture -->
+               <div class="search-parametr-box">
+                   <select name="Year of manufacture" title="Select Year of Manufacture">
+                       <option value="Year of manufacture">Year of manufacture</option>
+                       <!-- Add more options as needed -->
+                       <option value="2023">2023</option>
+                       <option value="2022">2022</option>
+                       <option value="2021">2021</option>
+                       <option value="2020">2020</option>
+                       <option value="2019">2019</option>
+                       <option value="2018">2018</option>
+                       <option value="2017">2017</option>
+                       <option value="2016">2016</option>
+                       <option value="2015">2015</option>
+                       <option value="2014">2014</option>
+                       <option value="2013">2013</option>
+                   </select>
+               </div>
+           
+               <!-- Energy Type -->
+               <div class="search-parametr-box">
+                   <select name="energy type" title="Select Energy Type">
+                       <option value="Energy Type">Type of energy</option>
+                       <option value="Gasoline">Gasoline</option>
+                       <option value="Diesel">Diesel</option>
+                       <option value="Electric">Electric</option>
+                       <option value="Hybrid">Hybrid</option>
+                   </select>
+               </div>
+           
+               <!-- Region -->
+               <div class="search-parametr-box">
+                   <select name="Region" title="Select Region">
+                       <option value="Region">Region</option>
+                       <option value="Praha">Praha</option>
+                       <option value="Plzen">Plzen</option>
+                       <option value="Brno">Brno</option>
+                       <option value="Ostrava">Ostrava</option>
+                   </select>
+               </div>
+           </div>
+           <div class="search-auto-btn-container">
+               <a href="#" class="btn">Search &#8594;</a>
+           </div>
+           
+        </div>
+        <div class="empty-div"></div>
+   </div>
+        
+   
+   <!-------------- Our New Cars -------------->
+     
+           <h2 class="title">New Cars</h2>
+                <div class="new-cars-container">
+                  <div class="car-container">
+                       <div class="top-car-box">
+                           <img src="https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Audi">
+                       </div>
+                      
+                      <div class="charakter-box">
+                       <p>Audi R8</p>
+                           <div class="rating-box">
+                               <p class="character-text">Exterior</p>
+                               <div class="rating">
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-empty-buble"></div>
+                               </div>
+                           </div>
+                           <div class="rating-box">
+                               <p class="character-text">Chassis</p>
+                               <div class="rating">
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-empty-buble"></div>
+                               </div>
+                           </div>
+                           <div class="rating-box">
+                               <p class="character-text">Engine</p>
+                               <div class="rating">
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-empty-buble"></div>
+                               </div>
+                           </div>
+                           <div class="rating-box">
+                               <p class="character-text">Interior</p>
+                               <div class="rating">
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-full-buble"></div>
+                                   <div class="rating-empty-buble"></div>
+                               </div>
+                           </div>
+                       </div>
+                  </div> 
+                  <div class="car-container">
+                       <div class="top-car-box">
+                           <img src="https://images.pexels.com/photos/6894428/pexels-photo-6894428.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Supra">
+                       </div>
+                      <div class="charakter-box">
+                       <p>Supra</p>
+                       <div class="rating-box">
+                           <p class="character-text">Exterior</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Chassis</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Engine</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Interior</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                   </div>
+                  </div> 
+                  <div class="car-container">
+                        <div class="top-car-box">
+                               <img src="https://images.pexels.com/photos/1005633/pexels-photo-1005633.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Coleos">
+                         </div>
+                      <div class="charakter-box">
+                       <p>Coleos</p>
+                       <div class="rating-box">
+                           <p class="character-text">Exterior</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Chassis</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Engine</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Interior</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                   </div>
+                  </div> 
+                  <div class="car-container">
+                        <div class="top-car-box">
+                               <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800" alt="M5">
+                           </div>
+                      <div class="charakter-box">
+                       <p>M5</p>
+                       <div class="rating-box">
+                           <p class="character-text">Exterior</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Chassis</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Engine</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Interior</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                   </div>
+                  </div> 
+                  <div class="car-container">
+                           <div class="top-car-box">
+                                   <img src="https://images.pexels.com/photos/215528/pexels-photo-215528.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AMG">
+                                   <p>AMG</p>
+                               </div>
+                      <div class="charakter-box">
+                       <div class="rating-box">
+                           <p class="character-text">Exterior</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Chassis</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Engine</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Interior</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                   </div>
+                  </div> 
+                  <div class="car-container">
+                           <div class="top-car-box">
+                                   <img src="https://images.pexels.com/photos/15194850/pexels-photo-15194850/free-photo-of-skoda-superb-parked-on-the-shore.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Superb">
+                               </div>
+                      <div class="charakter-box">
+                       <p>Superb</p>
+                       <div class="rating-box">
+                           <p class="character-text">Exterior</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Chassis</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Engine</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Interior</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                   </div>
+                  </div> 
+                   <div class="car-container">`
+                           <div class="top-car-box">
+                                   <img src="https://images.pexels.com/photos/16475137/pexels-photo-16475137/free-photo-of-sports-honda-civic-type-r-parked-in-front-of-an-industrial-building.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Civic">
+                               </div>
+                      <div class="charakter-box">
+                       <p>Civic</p>
+                       <div class="rating-box">
+                           <p class="character-text">Exterior</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Chassis</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Engine</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                       <div class="rating-box">
+                           <p class="character-text">Interior</p>
+                           <div class="rating">
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-full-buble"></div>
+                               <div class="rating-empty-buble"></div>
+                           </div>
+                       </div>
+                   </div>
+                  </div> 
+               </div>
+          
+   
+      
+   <!----------testimonial--------------->   
+     
+      <div class="testimonial">
+          <div class="small-container">
+          <div class="container">
+              <div class="col-3">
+                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                          <img src="images/user-1.png" alt="User img">
+                          <h3>Joanna Free</h3>
+              </div>
+               <div class="col-3">
+                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                          <img src="images/user-2.png" alt="User img">
+                          <h3>John Fire</h3>
+              </div>
+               <div class="col-3">
+                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                          <img src="images/user-3.png" alt="User img">
+                          <h3>Mabel Joe</h3>
+              </div>
+          </div>
+          </div>
+      </div>
+     
+       
+   <!----------Footer---------------> 
+   <footer>
+    <article>
+        <div class="footer-container">
+            <div class="left-footer">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo" width="125px"></a>
+                </div>
+                <div class="socials">
+                    <a href="#"><img src="images/facebook-logo.svg" alt="facebook"></a>
+                    <a href="#"><img src="images/instagram-logo.svg" alt="instagram"></a>
+                    <a href="#"><img src="images/twitter-logo.svg" alt="twitter"></a>
+                    <a href="#"><img src="images/discord-logo.svg" alt="discord"></a>
+                </div>
+            </div>
+            <div class="right-footer">
+                <h2>Kde nas najdete</h2>
+                <img src="images/mapa-kde-nas-najdete.png" alt="Mapa kde nas najdete">
+            </div>
+        </div>
+        <article>
+            <div class="some-footer-text">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nobis aliquid dolorem est consequatur. Laudantium, fugiat reprehenderit molestiae reiciendis ad vero quas eaque! Praesentium, maiores autem mollitia fugiat libero soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rem temporibus veritatis debitis reprehenderit eius? Quo, illo perferendis esse molestias corrupti impedit nulla assumenda sint porro nobis nam reprehenderit accusamus.
+                </p>
+            </div>
+            
+        </article>
+
+    </article>
+    
+   </footer>
+</main>     
+    
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "300px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+    
+    
+</script>
+
+
+
+</body>
+</html>
+
