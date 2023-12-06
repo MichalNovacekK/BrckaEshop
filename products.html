@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brcka.cz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a class="active-page" href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+
+                    </form>
+                </div>
+            </div>
+            <div class="left-nav-bar">
+                <a onclick="openSearch()"><img src="images/search-icon1.png" alt="Search Icon"></a>
+                <a href="cart.html"><img src="images/shopping-cart-icon1.png" alt="shop logo"></a>
+                <a><img src="images/menu-icon1.png" alt="Menu logo" class="menu-icon" onclick="menutoggle()"></a>
+            </div>
+        </div>
+    </header>
+
+    </div>
+    <!----------------- title -------------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Shorting</option>
+                <option>Short by price</option>
+                <option>Short by popularity</option>
+                <option>Short by rating</option>
+                <option>Short by sale</option>
+            </select>
+        </div>
+
+
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img src="https://picsum.photos/200" alt="Avatar" style="width:100%">
+                    <div>
+                        <h4><b>BMW M3</b></h4>
+                        <table>
+                            <tr>
+                                <td>Power</td>
+                                <td style="text-align: right;">500 kw</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="https://picsum.photos/200" alt="Avatar" style="width:100%">
+                    <div>
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+
+    <!----------Footer--------------->
+
+    <div class="footer">
+        <div class="container">
+
+        </div>
+    </div>
+
+
+
+    <!-------------js for toggle menu-------------->
+
+
+    <script>
+
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "300px";
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
